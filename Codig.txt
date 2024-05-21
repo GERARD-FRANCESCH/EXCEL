@@ -1,0 +1,29 @@
+
+Public Function notas(CALIFICACIONES)
+    If CALIFICACIONES >= 9 Then
+        notas = "AE"
+        ElseIf CALIFICACIONES >= 7 Then
+            notas = "AN"
+            ElseIf CALIFICACIONES >= 5 Then
+                notas = "AS"
+                ElseIf CALIFICACIONES <= 5 Then
+                    notas = "NA"
+     End If
+End Function
+
+Public Sub Contraseña()
+    Dim contra As String
+    Do While contra <> "1234"
+        contra = InputBox("Introduce tu contrasenya", "password")
+    Loop
+End Sub
+
+Public Function COMISION2(VENTAS)
+    If VENTAS > 120000 Then
+        COMISION2 = VENTAS * 0.08
+        ElseIf VENTAS >= 80000 Then
+            COMISION2 = VENTAS * 0.06
+    Else
+        COMISION2 = VENTAS * 0.04
+    End If
+End Function
